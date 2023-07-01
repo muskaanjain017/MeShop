@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <nav>
+        <div class="brand">
+          <a href="./shop/shop.html">MeShop.</a>
+        </div>
+        <div class="nav-items">
+          <a href="./shop/shop.html">Home</a>
+          <a href="./login.html">Login</a>
+          <a href="./signup.html">Signup</a>
+          <a href="./cart/cart.html">My Cart</a>
+        </div>
+      </nav>
+      <form method="post">
+        <h1>Signup</h1>
+        <input type="text" placeholder="Full Name" name="name" id="name" onChange="onChange('name')">
+        <input type="email" placeholder="Email" name="email" id="email" onChange="onChange('email')" >
+        <input type="password" placeholder="Password" name="password" id="password" onChange="onChange('password')">
+        <input type="password" placeholder="Confirm Password" name="confirm" id="confirm" onChange="onChange('confirm')">
+        <p id="message"></p>
+        <button value="submit" id="submit" onclick="saveData()">Signup</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
